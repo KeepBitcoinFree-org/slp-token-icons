@@ -1,37 +1,19 @@
-# SLP Token Icons
+# Bitcoin Cash Token Icons
 
-A hosted repository of all known SLP token icons. All tokens added here will be served via an extremely censorship resistant endpoint located at tokens.bch.sx/`[size]`/`[txid]`.png
+This project contains Bitcon Cash token icons in 4 sizes. Completely free. All we ask is that you don’t claim them as your own, and share this resource with others.
 
-## Usage
+Images are in the PNG format (transparent) in `32×32`, `32×32 (2x)`, and `128×128` variants, along with SVG versions. Each token has a `name`, `symbol` and `tokenId` listed in [manfest.json](manifest.json).
 
-The format is tokens.bch.sx/`{size}`/`{txid}`.`{format}`
+There's also a [`generic` icon](https://github.com/Bitcoin-com/bch-token-icons/blob/master/svg/icon/generic.svg) that can be used for cryptocurrencies missing an icon here.
 
-`{size}` can be any number from 1-2399 (or "original")
+If there is a token you’re looking for that hasn’t been included, please [create a new pull-request](https://github.com/Bitcoin-com/bch-token-icons/pulls/new) and add it. Please include your icon in the 3 sizes mentioned above and add your token's `name`, `symbol` and `tokenId` to [manfest.json](manifest.json)
 
-`{txid}` is the transaction id of the token genesis transaction
+## Install 🚀
 
-`{format}` can be png, jpg, tiff or webp
+```
+$ npm install bch-token-icons --save
+```
 
-## Examples
+You can then import the icons from `./node_modules/bch-token-icons`, for example `./node_modules/bch-token-icons/svg/icon/bch.svg`.
 
-`https://tokens.bch.sx/128/4ac91a7245936cda41cfa616c342cbcd111a72a60bf37fdf8e556926cbaa7b28.png`
-
-`https://tokens.bch.sx/64/4ac91a7245936cda41cfa616c342cbcd111a72a60bf37fdf8e556926cbaa7b28.png`
-
-`https://tokens.bch.sx/32/4ac91a7245936cda41cfa616c342cbcd111a72a60bf37fdf8e556926cbaa7b28.png`
-
-`https://tokens.bch.sx/original/4ac91a7245936cda41cfa616c342cbcd111a72a60bf37fdf8e556926cbaa7b28.png`
-
-## Adding your icon
-
-Create a version of your icon in 32x32, 64x64, 128x128 and "original" (more than or equal to 128px) and add them to their respective folders in a pull request. If you have a SVG file, feel free to add that to.
-
-Alternatively open an issue or contact me on [telegram](https://t.me/kosinusbch) with links to an icon in at least 128x128 and I'll resize them for you.
-
-## Services using slp-token-icons
-
-[Simpleledger.info](https://simpleledger.info)
-
-[Bitcoin.com Explorer](https://explorer.bitcoin.com)
-
-[Crescent Cash](https://crescent.cash)
+There's also a `manifest.json` file included in the package with a list of the currency symbol and name of the icons.
